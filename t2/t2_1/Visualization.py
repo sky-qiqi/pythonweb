@@ -1,0 +1,60 @@
+import pandas as pd
+from mlxtend.frequent_patterns import apriori, association_rules
+from mlxtend.preprocessing import TransactionEncoder
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+# 加载您的数据集
+file_path = r'C:\Users\qiqi\OneDrive\Desktop\code\pythonweb\t2\Groceries_dataset.csv'
+df = pd.read_csv(file_path)
+
+# 将数据按 Member_number 分组，获取每个用户的购物篮
+transactions = df.groupby('Member_number')['itemDescription'].apply(list).tolist()
+
+# 数据预处理
+te = TransactionEncoder()
+te_array = te.fit(transactions).transform(transactions)
+df_encoded = pd.DataFrame(te_array, columns=te.columns_)
+
+# 设置最小支持度和最小置信度
+min_support = 0.01
+min_confidence = 0.2
+
+# 应用 Apriori 算法挖掘频繁项集
+frequent_itemsets = apriori(df_encoded, min_support=min_support, use_colnames=True)
+
+# 生成关联规则
+rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=min_confidence)
+
+# 可视化关联规则 (使用 Lift 值调整点的大小)
+plt.figure(figsize=(12, 8))
+sns.scatterplot(x="support", y="confidence", size=rules["lift"]**0.5 * 20, data=rules, alpha=0.6)
+plt.title("Association Rules Visualization (Support vs. Confidence, Size by Lift)", fontsize=14)
+plt.xlabel("Support", fontsize=12)
+plt.ylabel("Confidence", fontsize=12)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 基于规则的简单推荐 (保持不变)
+def recommend_items(basket, rules, top_n=5):
+    recommendations = set()
+    for index, rule in rules.iterrows():
+        antecedents = set(rule['antecedents'])
+        consequents = set(rule['consequents'])
+
+        if antecedents.issubset(basket):
+            for item in consequents:
+                if item not in basket:
+                    recommendations.add(item)
+    return list(recommendations)[:top_n]
+
+# 示例用户购物篮
+user_basket = ['whole milk', 'rolls/buns']
+recommended_items = recommend_items(user_basket, sorted_rules)
+print(f"\n当用户购买了 '{user_basket}' 时，推荐商品: {recommended_items}")
+
+user_basket_2 = ['tropical fruit', 'citrus fruit']
+recommended_items_2 = recommend_items(user_basket_2, sorted_rules)
+print(f"\n当用户购买了 '{user_basket_2}' 时，推荐商品: {recommended_items_2}")
