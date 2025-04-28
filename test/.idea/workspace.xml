@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a072a84-d500-4eeb-b932-0da8ede98624" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/../last/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/.idea/last.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../last/.idea/last.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../last/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../last/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../last/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/back.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/data_processing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/data_processing/load_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/extensions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/recommendation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/recommendation/collaborative_filtering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../last/back/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last/back/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xsrdguhji/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xsrdguhji/xsrdguhji.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sky-qiqi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sky-qiqi/pythonweb.git&quot;,
+    &quot;accountId&quot;: &quot;22dc8275-fee2-45f0-b583-af7e2f55a7da&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\devenvironment\maven\apache-maven-3.9.9" />
+        <option name="localRepository" value="D:\devenvironment\maven\apache-maven-3.9.9\mvn_repo" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\devenvironment\maven\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wJQkyTTh9nlybecpvcV7Pr9qHA" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "20.15.0",
+    "javascript.nodejs.core.library.typings.version": "20.15.0",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/qiqi/OneDrive/Desktop/code/pythonweb/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.27701148",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (cxk)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\qiqi\OneDrive\Desktop\code\pythonweb\test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="4a072a84-d500-4eeb-b932-0da8ede98624" name="更改" comment="" />
+      <created>1743330050405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743330050405</updated>
+      <workItem from="1743330054131" duration="449000" />
+      <workItem from="1745757348994" duration="2308000" />
+      <workItem from="1745807043616" duration="177000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test$app.coverage" NAME="app 覆盖结果" MODIFIED="1745759536283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\qiqi\OneDrive\Desktop\code\pythonweb\test" />
+  </component>
+</project>

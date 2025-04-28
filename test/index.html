@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 聊天</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Removed flex centering to allow normal page content */
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            padding-bottom: 80px; /* Add padding to prevent content overlap with button */
+        }
+        #chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        #chat-toggle-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #chat-toggle-button:hover {
+            background-color: #0056b3;
+        }
+        #chat-container {
+            /* width: 80%; */ /* Use fixed width */
+            width: 350px; /* Fixed width for chat window */
+            /* max-width: 600px; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            /* display: flex; */ /* Initially hidden */
+            display: none;
+            flex-direction: column;
+            /* height: 80vh; */ /* Use max-height */
+            height: 500px; /* Fixed height */
+            max-height: 80vh;
+            position: fixed; /* Position relative to viewport */
+            bottom: 90px; /* Position above the toggle button */
+            right: 20px;
+            z-index: 999; /* Below the button but above page content */
+        }
+        #chat-box {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            align-self: flex-end;
+            margin-left: auto; /* Push to the right */
+        }
+        .ai-message {
+            background-color: #e9e9eb;
+            color: #333;
+            align-self: flex-start;
+            margin-right: auto; /* Push to the left */
+        }
+        #input-area {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin-right: 10px;
+            resize: none; /* Prevent manual resizing */
+            height: 20px; /* Initial height */
+            overflow-y: hidden; /* Hide scrollbar initially */
+        }
+        #send-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #send-button:hover {
+            background-color: #0056b3;
+        }
+        #send-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>主页面内容</h1>
+    <p>这是 index.html 的一些示例内容。</p>
+    <p>悬浮聊天机器人应该出现在这个页面的右下角。</p>
+    <a href="page1.html">跳转到页面1</a>
+    <br>
+    <a href="page2.html">跳转到页面2</a>
+
+    <!-- Chat Widget Container -->
+    <div id="chat-widget">
+        <!-- Chat Window (initially hidden) -->
+        <div id="chat-container">
+        <div id="chat-box">
+            <div class="message ai-message">你好！有什么可以帮你的吗？</div>
+        </div>
+        <div id="input-area">
+            <textarea id="user-input" placeholder="输入你的消息..." rows="1"></textarea>
+            <button id="send-button">发送</button>
+        </div>
+    </div>
+
+        </div>
+        <!-- Floating Toggle Button -->
+        <button id="chat-toggle-button">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
