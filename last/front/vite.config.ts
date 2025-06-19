@@ -19,7 +19,7 @@ const proxy = (list: [string, string][]) => {
     return obj
 }
 
-export default async ({ command, mode }: ConfigEnv): UserConfigExport => {
+export default async ({ command, mode }: ConfigEnv): Promise<UserConfigExport> => {
     const root = process.cwd()
     const env = loadEnv(mode, root) as unknown as ImportMetaEnv
     const prodMock = false

@@ -25,6 +25,7 @@
                         target="_blank"
                         type="success"
                         style="font-size:25px"
+                        :underline="'hover'"
                     >前往观看</el-link>
                 </el-descriptions-item>
                 <el-descriptions-item label="添加评分">
@@ -185,93 +186,160 @@ export default {
 <style lang="postcss" scoped>
 .comment-card {
     display: flex;
-    margin-bottom: 10px;
-    border-bottom: 1px dotted #ccc;
-    padding: 20px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffb6c1; /* Light pink border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    background-color: #fff0f5; /* Lavender blush background */
     .wrap {
-        margin-left: 30px;
+        margin-left: 20px;
         flex: 1;
         p:nth-child(1) {
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            color: #ff69b4; /* Hot pink color */
         }
         p:nth-child(2) {
-            color: #888;
-            font-size: 14px;
+            color: #ff1493; /* Deep pink color */
+            font-size: 13px;
         }
     }
 }
 .comment-part {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .item-recommand {
     ::v-deep(.el-card__body) {
         display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items */
     }
+    border: 2px dashed #ff69b4; /* Hot pink dashed border */
+    border-radius: 15px; /* More rounded corners */
+    padding: 10px;
 }
 .card-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space between title and button */
     align-items: center;
     span {
-        font-size: 30px;
+        font-size: 25px; /* Slightly smaller font */
         font-weight: bold;
+        color: #ff69b4; /* Hot pink color */
     }
 }
 .info {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping */
     ::v-deep(.el-descriptions) {
         flex: 1;
+        margin-left: 20px; /* Add some left margin */
         .el-descriptions__body {
             background-color: transparent !important;
             .el-descriptions__cell {
-                font-size: 18px;
+                font-size: 16px; /* Slightly smaller font */
+                padding-bottom: 5px; /* Reduce bottom padding */
                 .el-descriptions__label {
-                    color: black;
+                    color: #ff1493; /* Deep pink color */
                     font-weight: bold;
+                }
+                .el-descriptions__content {
+                    color: #ff69b4; /* Hot pink color for content */
                 }
             }
         }
     }
     img {
-        width: 200px;
-        margin-right: 10px;
+        width: 180px; /* Slightly smaller image */
+        margin-right: 15px;
+        border-radius: 8px; /* Rounded image corners */
+        border: 2px solid #ffb6c1; /* Light pink border */
     }
 }
 .desc {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 30px;
-    box-shadow: 1px 1px 5px #ccc;
-}
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    span {
-        font-size: 20px;
-        font-weight: bold;
-    }
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    box-shadow: 2px 2px 8px #ffb6c1; /* Light pink shadow */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff0f5; /* Lavender blush background */
+    color: #ff1493; /* Deep pink color */
 }
 .movie-card-simple {
-    flex: 1;
+    flex: 0 0 calc(33.333% - 20px); /* Adjust flex basis for 3 items per row with margin */
+    max-width: calc(33.333% - 20px); /* Ensure max width */
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin: 15px 10px;
+    margin: 10px;
+    border: 1px solid #ffb6c1; /* Light pink border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
     img {
         width: 100%;
+        height: auto; /* Maintain aspect ratio */
     }
     .desc2 {
         flex: 1;
-        padding: 10px;
+        padding: 8px;
         p {
-            font-size: 12px;
+            font-size: 11px; /* Slightly smaller font */
+            color: #ff1493; /* Deep pink color */
         }
         p + p {
-            margin-top: 10px;
+            margin-top: 8px;
         }
     }
 }
+
+/* Additional styles for cute theme */
+.el-tag {
+    background-color: #ffb6c1 !important; /* Light pink tag background */
+    color: #ff1493 !important; /* Deep pink tag text */
+    border-color: #ff69b4 !important; /* Hot pink tag border */
+    border-radius: 12px; /* More rounded tags */
+}
+
+.el-link.el-link--success {
+    color: #ff1493 !important; /* Deep pink link color */
+    font-size: 22px !important; /* Slightly smaller font */
+    text-decoration: underline wavy #ff69b4; /* Wavy underline */
+}
+
+.el-button--primary {
+    background-color: #ff69b4 !important; /* Hot pink button background */
+    border-color: #ff1493 !important; /* Deep pink button border */
+    color: white !important; /* White text */
+    border-radius: 20px; /* Pill-shaped buttons */
+}
+
+.el-button--warning {
+    background-color: #ffb6c1 !important; /* Light pink button background */
+    border-color: #ff69b4 !important; /* Hot pink button border */
+    color: #ff1493 !important; /* Deep pink text */
+    border-radius: 20px; /* Pill-shaped buttons */
+}
+
+.el-select__inner {
+    border-color: #ffb6c1 !important; /* Light pink select border */
+    border-radius: 8px; /* Rounded select */
+}
+
+.el-tabs__item.is-active {
+    color: #ff1493 !important; /* Deep pink active tab text */
+}
+
+.el-tabs__item {
+    color: #ff69b4 !important; /* Hot pink tab text */
+}
+
+.el-tabs__nav-wrap::after {
+    background-color: #ffb6c1 !important; /* Light pink tab underline */
+}
+
+h1 {
+    color: #ff1493 !important; /* Deep pink color for h1 */
+}
+
 </style>

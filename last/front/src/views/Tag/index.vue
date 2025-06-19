@@ -48,19 +48,47 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffb6c1; /* 粉色背景 */
+    padding: 15px;
+    border-radius: 10px 10px 0 0; /* 圆角 */
     span {
         font-size: 30px;
         font-weight: bold;
+        color: #fff; /* 白色字体 */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 阴影 */
     }
 }
 .tags {
     width: 100%;
-    display: inline-flex;
+    display: flex; /* 使用flexbox */
     flex-wrap: wrap;
+    justify-content: center; /* 居中对齐 */
+    padding: 20px;
+    background-color: #ffe4e1; /* 浅粉色背景 */
+    border-radius: 0 0 10px 10px; /* 圆角 */
     span {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
-        width: 24%;
+        width: 20%; /* 调整宽度 */
+        margin: 10px; /* 增加间距 */
+    }
+}
+
+.el-card {
+    border-radius: 10px; /* 整体圆角 */
+    overflow: hidden; /* 隐藏溢出部分 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 柔和阴影 */
+}
+
+.el-button--text {
+    color: #ff69b4; /* 可爱的粉色字体 */
+    font-size: 20px; /* 字体大小 */
+    font-weight: bold;
+    transition: color 0.3s ease; /* 过渡效果 */
+
+    &:hover {
+        color: #ff1493; /* 悬停时的深粉色 */
+        text-decoration: underline; /* 悬停时加下划线 */
     }
 }
 </style>

@@ -4,7 +4,7 @@ import ElementPlus from 'element-plus'
 import direct from '/@/directive/index'
 import mixin from '/@/mixin/index'
 import router from '/@/router/index'
-import { pinia } from '/@/store'
+import { pinia } from '/@/store' // 确保这里是 '/@/store'
 import '/@/permission'
 
 import 'element-plus/dist/index.css'
@@ -20,7 +20,7 @@ const app = createApp(App)
 direct(app)
 app.use(ElementPlus)
 app.use(router)
-app.use(pinia)
+app.use(pinia) // 这里确保 Pinia 已经挂载
 app.component('SvgIcon', SvgIcon)
 app.component('VueEcharts', VueEcharts)
 app.component('RateText', RateText)

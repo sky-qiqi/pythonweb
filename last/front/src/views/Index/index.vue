@@ -133,23 +133,71 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffb6c1; /* 可爱的粉色背景 */
+    padding: 15px;
+    border-radius: 10px 10px 0 0; /* 圆角 */
     span {
-        font-size: 20px;
+        font-size: 22px; /* 字体稍大 */
         font-weight: bold;
+        color: #fff; /* 白色字体 */
+        text-shadow: 1px 1px 2px #ff69b4; /* 粉色阴影 */
     }
 }
 .movies {
-    display: inline-flex;
+    display: flex; /* 使用 flex 布局 */
     flex-wrap: wrap;
+    justify-content: center; /* 居中对齐 */
+    padding: 20px;
+    background-color: #ffe4e1; /* 淡粉色背景 */
     ::v-deep(.el-card) {
-        width: 19%;
-        margin: 0 10px 10px 0;
+        width: 200px; /* 固定宽度 */
+        margin: 15px; /* 增加间距 */
+        border-radius: 15px; /* 更大的圆角 */
+        overflow: hidden; /* 隐藏溢出内容 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 柔和阴影 */
+        transition: transform 0.3s ease; /* 添加过渡效果 */
+        &:hover {
+            transform: translateY(-5px); /* 悬停上移 */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 悬停阴影 */
+        }
     }
-    ::v-deep(.el-card__body) {
+    ::v_deep(.el-card__body) {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+        align-items: center; /* 居中对齐 */
+        padding: 10px; /* 调整内边距 */
+        img {
+            width: 100%; /* 图片宽度填充卡片 */
+            height: 150px; /* 固定图片高度 */
+            object-fit: cover; /* 保持图片比例 */
+            border-radius: 10px; /* 图片圆角 */
+            margin-bottom: 10px; /* 图片下方间距 */
+        }
+        .el-button--text {
+            color: #ff69b4; /* 粉色按钮文字 */
+            font-size: 16px; /* 按钮字体大小 */
+            font-weight: bold;
+            margin-bottom: 5px; /* 按钮下方间距 */
+        }
+        span {
+            text-align: center;
+            font-size: 14px; /* 年份字体大小 */
+            color: #888; /* 灰色字体 */
+        }
+    }
+}
+.el-pagination {
+    margin-top: 30px;
+    ::v-deep(.el-pager li.active) {
+        background-color: #ff69b4 !important; /* 分页选中背景色 */
+        color: #fff; /* 分页选中字体颜色 */
+    }
+    ::v-deep(.el-pager li:hover) {
+        color: #ff69b4; /* 分页悬停颜色 */
+    }
+    ::v-deep(.btn-prev, .btn-next) {
+        color: #ff69b4; /* 分页按钮颜色 */
     }
 }
 </style>

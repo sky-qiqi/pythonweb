@@ -117,16 +117,94 @@ export default defineComponent({
 </script>
 
 <style lang='postcss' scoped>
-::v-deep(.layout-sidebar-sidesetting .el-drawer__header) {
-  margin-bottom: 0;
+/* 可爱风格布局样式 */
+
+.layout {
+  background-color: #fce4ec; /* 非常浅的粉色背景 */
 }
 
-::v-deep(.el-menu--horizontal > .el-menu-item) {
+.layout-sidebar {
+  background-color: #f8bbd0; /* 浅粉色侧边栏背景 */
+  box-shadow: 2px 0 10px rgba(244, 143, 177, 0.3); /* 可爱粉色阴影 */
+}
+
+.layout-sidebar-logo {
+  background-color: #f48fb1; /* 可爱粉Logo背景 */
+  color: white; /* 白色文字 */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(244, 143, 177, 0.4);
+}
+
+.layout-sidebar-menubar ::v-deep(.el-scrollbar__wrap) {
+  background-color: #f8bbd0; /* 侧边栏菜单背景 */
+}
+
+.layout-sidebar-menubar ::v-deep(.el-menu) {
+  border-right: none;
+  background-color: transparent; /* 菜单背景透明 */
+}
+
+.layout-sidebar-menubar ::v_deep(.el-menu-item),
+.layout-sidebar-menubar ::v_deep(.el-sub-menu__title) {
+  color: #880e4f; /* 深粉色文字 */
+}
+
+.layout-sidebar-menubar ::v_deep(.el-menu-item:hover),
+.layout-sidebar-menubar ::v_deep(.el-sub-menu__title:hover) {
+  background-color: #f06292; /* 亮粉色悬停背景 */
+}
+
+.layout-sidebar-menubar ::v_deep(.el-menu-item.is-active) {
+  background-color: #e91e63; /* 鲜艳粉色选中背景 */
+  color: white; /* 白色文字 */
+}
+
+.layout-main-navbar {
+  background-color: #f8bbd0; /* 浅粉色导航栏背景 */
+  box-shadow: 0 2px 5px rgba(244, 143, 177, 0.3);
+}
+
+.layout-main-tags {
+  background-color: #fce4ec; /* 非常浅的粉色标签背景 */
+  border-bottom: 1px solid #f48fb1; /* 可爱粉底部边框 */
+}
+
+.layout-main-content {
+  background-color: #ffffff; /* 白色内容区域背景 */
+  /* 可以考虑添加一个可爱的背景图片 */
+  /* background-image: url('/@/assets/img/ai/hallowkity.jpg'); */
+  /* background-repeat: repeat; */
+  /* background-size: auto; */
+  /* opacity: 0.8; */
+}
+
+/* 覆盖Element Plus默认样式以匹配可爱风格 */
+::v_deep(.el-drawer__header) {
+  margin-bottom: 0;
+  color: #e91e63; /* 抽屉头部文字颜色 */
+}
+
+::v_deep(.el-menu--horizontal > .el-menu-item) {
   height: 48px;
 }
 
-::v-deep(.el-menu--horizontal > .el-sub-menu .el-sub-menu__title) {
+::v_deep(.el-menu--horizontal > .el-sub-menu .el-sub-menu__title) {
   height: 48px;
   line-height: 48px;
+}
+
+::v_deep(.el-tag) {
+  background-color: #f06292; /* 标签背景 */
+  border-color: #e91e63; /* 标签边框 */
+  color: white; /* 标签文字颜色 */
+}
+
+::v_deep(.el-tag .el-tag__close) {
+  color: white; /* 标签关闭按钮颜色 */
+}
+
+::v_deep(.el-tag .el-tag__close:hover) {
+  background-color: #880e4f; /* 标签关闭按钮悬停背景 */
+  color: white; /* 标签关闭按钮悬停颜色 */
 }
 </style>

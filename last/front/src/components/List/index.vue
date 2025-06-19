@@ -8,7 +8,7 @@
                         <i v-if='val.iconClass' :class='{"text-3xl": true, [val.iconClass]: true}' />
                     </div>
                     <div>
-                        <el-link v-if='val.href' type='primary' :underline='false' :href='val.href'>
+                        <el-link v-if='val.href' type='primary' :underline="'never'" :href='val.href'>
                             <p class='text-sm mb-1'>
                                 {{ val.subTitle }}
                                 <el-tag v-if='val.tag'>{{ val.tag }}</el-tag>
@@ -41,7 +41,7 @@
                         <div class='px-4 truncate text-base'>{{ val.title }}</div>
                     </div>
                     <div class='py-1 h-16 overflow-ellipsis overflow-hidden leading-6'>
-                        <el-link v-if='val.href' type='primary' :underline='false' :href='val.href'>
+                        <el-link v-if='val.href' type='primary' :underline="'never'" :href='val.href'>
                             <p class='text-sm mb-1'>{{ val.subTitle }}</p>
                         </el-link>
                         <p v-else>{{ val.subTitle }}</p>

@@ -120,3 +120,41 @@ export default defineComponent({
     }
 })
 </script>
+
+<style lang="scss" scoped>
+.shadow {
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.layout-tags-container {
+    .layout-tags-active {
+        color: #fff;
+        background-color: #ffb6c1; /* 可爱的粉色 */
+        border-color: #ffb6c1;
+
+        i {
+            background-color: #fff;
+        }
+    }
+
+    span {
+        border-radius: 15px; /* 圆角 */
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #ffe4e1; /* 浅粉色悬停效果 */
+            color: #333;
+        }
+    }
+}
+
+ul {
+    border-radius: 8px; /* 圆角菜单 */
+    li {
+        transition: all 0.2s ease;
+        &:hover {
+            background-color: #ffe4e1; /* 浅粉色悬停效果 */
+        }
+    }
+}
+</style>

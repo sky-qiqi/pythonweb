@@ -89,18 +89,27 @@ export default {
 .movie-card-simple {
     cursor: pointer;
     display: flex;
-    margin: 15px 10px;
+    margin: 10px 0; /* Adjust margin */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    transition: transform 0.2s ease-in-out; /* Add hover effect */
+    &:hover {
+        transform: translateY(-5px); /* Lift on hover */
+    }
     img.cover {
-        max-width: 130px;
+        max-width: 100px; /* Smaller image */
+        border-radius: 8px; /* Rounded corners for image */
     }
     .desc {
         flex: 1;
-        padding: 10px;
+        padding: 0 10px; /* Adjust padding */
         p {
-            font-size: 12px;
+            font-size: 13px; /* Slightly larger font */
+            color: #555; /* Darker text color */
         }
         p + p {
-            margin-top: 10px;
+            margin-top: 5px; /* Smaller margin */
         }
     }
 }
@@ -113,25 +122,34 @@ export default {
     justify-content: space-between;
     align-items: center;
     span {
-        font-size: 20px;
+        font-size: 18px; /* Slightly smaller font */
         font-weight: bold;
+        color: #ff69b4; /* Hot pink color for headers */
     }
 }
 .x-container {
-    padding: 60px 30px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
+    background-color: #ffe4e1; /* Light pink background */
     .inner {
-        width: 80%;
+        width: 90%; /* Slightly wider content area */
         display: flex;
+        gap: 20px; /* Add gap between content and right sidebar */
         .content {
             flex: 1;
+            background-color: #fff0f5; /* Lighter pink for content background */
+            padding: 20px;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
         .right {
-            width: 25%;
-            margin-left: 30px;
-            .recent {
+            width: 30%; /* Adjust right sidebar width */
+            .el-card {
                 margin-bottom: 20px;
+                border-radius: 15px; /* Rounded corners for cards */
+                background-color: #fffafa; /* White background for cards */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for cards */
             }
         }
     }
